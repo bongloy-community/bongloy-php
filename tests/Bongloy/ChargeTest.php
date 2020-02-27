@@ -13,11 +13,11 @@ final class ChargeTest extends TestCase
     public function testCreatable()
     {
         $charge = Charge::create([
-            'amount' => 1000,
+            'amount' => 10000,
             'currency' => 'USD',
             'source' => $this->token()->id,
         ]);
-        $this->assertEquals($charge->amount, 1000);
+        $this->assertEquals($charge->amount, 10000);
         $this->assertEquals($charge->currency, "USD");
         $this->assertEquals($charge->status, "succeeded");
     }

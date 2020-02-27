@@ -13,18 +13,15 @@ trait TestHelper
     protected $origApiKey;
 
     /** @before */
-    protected function setUp(): void
+    protected function setUp()
     {
-        $dotenv = \Dotenv\Dotenv::createImmutable(__DIR__);
-        $dotenv->load();
-
         $this->origApiKey = Bongloy::getApiKey();
 
-        Bongloy::setApiKey($_ENV['BONGLOY_SECRET_KEY']);
+        Bongloy::setApiKey(getenv("BONGLOY_SECRET_KEY"));
     }
 
     /** @after */
-    protected function tearDown(): void
+    protected function tearDown()
     {
         Bongloy::setApiKey($this->origApiKey);
     }

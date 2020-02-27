@@ -42,10 +42,9 @@ final class ChargeTest extends TestCase
             'source' => $this->token()->id,
         ]);
 
-        $charges = Charge::all();
+        $charges = Charge::all(['limit' => 30]);
 
-        $this->assertIsArray($charges->data);
-        $this->assertEquals($charges->data[0]->id, $charge->id);
+        $this->assertArrayHasKey($charge->id, array_column($charges->data, 'amount', 'id'));
     }
 
     public function testCanCapture()

@@ -1,10 +1,8 @@
 # Bongloy PHP bindings 
 
-[![Build Status](https://travis-ci.org/stripe/stripe-php.svg?branch=master)](https://travis-ci.org/stripe/stripe-php)
-[![Latest Stable Version](https://poser.pugx.org/stripe/stripe-php/v/stable.svg)](https://packagist.org/packages/stripe/stripe-php)
-[![Total Downloads](https://poser.pugx.org/stripe/stripe-php/downloads.svg)](https://packagist.org/packages/stripe/stripe-php)
-[![License](https://poser.pugx.org/stripe/stripe-php/license.svg)](https://packagist.org/packages/stripe/stripe-php)
-[![Code Coverage](https://coveralls.io/repos/stripe/stripe-php/badge.svg?branch=master)](https://coveralls.io/r/stripe/stripe-php?branch=master)
+![Build Bongloy PHP](https://github.com/khomsovon/bongloy-php/workflows/Build%20Bongloy%20PHP/badge.svg)
+[![Total Downloads](https://poser.pugx.org/bongloy/bongloy-php/downloads.svg)](https://packagist.org/packages/bongloy/bongloy-php)
+[![License](https://poser.pugx.org/bongloy/bongloy-php/license.svg)](https://packagist.org/packages/bongloy/bongloy-php)
 
 The Bongloy PHP library provides convenient access to the Bongloy API from
 applications written in the PHP language. It includes a pre-defined set of

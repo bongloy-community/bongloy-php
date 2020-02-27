@@ -1,7 +1,7 @@
 # Bongloy PHP bindings 
 
 ![Build Bongloy PHP](https://github.com/khomsovon/bongloy-php/workflows/Build%20Bongloy%20PHP/badge.svg)
-[![Latest Stable Version](https://poser.pugx.org/stripe/stripe-php/v/stable.svg)](https://packagist.org/packages/stripe/stripe-php)
+[![Latest Stable Version](https://poser.pugx.org/bongloy/bongloy-php/v/stable.svg)](https://packagist.org/packages/bongloy/bongloy-php)
 [![Total Downloads](https://poser.pugx.org/bongloy/bongloy-php/downloads.svg)](https://packagist.org/packages/bongloy/bongloy-php)
 [![License](https://poser.pugx.org/bongloy/bongloy-php/license.svg)](https://packagist.org/packages/bongloy/bongloy-php)
 

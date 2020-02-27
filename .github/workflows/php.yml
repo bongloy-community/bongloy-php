@@ -14,8 +14,6 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        env:
-          - BONGLOY_SECRET_KEY=${{ secrets.BONGLOY_SECRET_KEY }}
         php-version:
           - "5.6"
           - "7.0"
@@ -40,3 +38,5 @@ jobs:
         run: |
           php --version
           vendor/bin/phpunit
+        env:
+          BONGLOY_SECRET_KEY: ${{ secrets.BONGLOY_SECRET_KEY }}

@@ -7,7 +7,7 @@ use Stripe\Stripe;
 Stripe::$apiBase = 'https://api.bongloy.com';
 Stripe::$connectBase = 'https://www.bongloy.com';
 
-class Bongloy
+class Bongloy extends Stripe
 {
     /**
      * Sets the API key to be used for requests.
@@ -16,6 +16,6 @@ class Bongloy
      */
     public static function setApiKey($apiKey)
     {
-        Stripe::setApiKey($apiKey);
+        parent::setApiKey($apiKey);
     }
 }

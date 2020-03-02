@@ -16,7 +16,9 @@ trait TestHelper
     protected function setUp(): void
     {
         $dotenv = \Dotenv\Dotenv::createImmutable(__DIR__);
-        $dotenv->load();
+        if(file_exists(__DIR__.'/.env')){
+          $dotenv->load();
+        }
 
         $this->origApiKey = Bongloy::getApiKey();
 

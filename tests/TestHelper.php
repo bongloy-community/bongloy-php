@@ -12,15 +12,12 @@ trait TestHelper
     /** @var string original API key */
     protected $origApiKey;
 
-    /** @var string API key */
-    protected $apiKey;
-
     /** @before */
     protected function setUp(): void
     {
         $this->origApiKey = Bongloy::getApiKey();
 
-        Bongloy::setApiKey($_ENV["BONGLOY_SECRET_KEY"]);
+        Bongloy::setApiKey(getenv("BONGLOY_SECRET_KEY"));
     }
 
     /** @after */

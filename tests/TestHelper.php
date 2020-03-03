@@ -12,17 +12,15 @@ trait TestHelper
     /** @var string original API key */
     protected $origApiKey;
 
+    /** @var string API key */
+    protected $apiKey;
+
     /** @before */
     protected function setUp(): void
     {
-        $dotenv = \Dotenv\Dotenv::createImmutable(__DIR__);
-        if(file_exists(__DIR__.'/.env')){
-          $dotenv->load();
-        }
-
         $this->origApiKey = Bongloy::getApiKey();
 
-        Bongloy::setApiKey($_ENV['BONGLOY_SECRET_KEY']);
+        Bongloy::setApiKey($_ENV["BONGLOY_SECRET_KEY"]);
     }
 
     /** @after */

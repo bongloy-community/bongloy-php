@@ -74,7 +74,6 @@ final class RefundTest extends TestCase
 
       $refunds = Refund::all();
 
-      $this->assertIsArray($refunds->data);
       $this->assertEquals($refunds->data[0]->id, $refund->id);
     }
 

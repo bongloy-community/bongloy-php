@@ -44,7 +44,6 @@ final class ChargeTest extends TestCase
 
         $charges = Charge::all();
 
-        $this->assertIsArray($charges->data);
         $this->assertEquals($charges->data[0]->id, $charge->id);
     }
 

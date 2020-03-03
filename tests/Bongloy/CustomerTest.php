@@ -44,7 +44,6 @@ final class CustomerTest extends TestCase
 
         $customers = Customer::all();
 
-        $this->assertIsArray($customers->data);
         $this->assertEquals($customers->data[0]->id, $customer->id);
     }
 

@@ -27,6 +27,5 @@
         "name": "Bongloy and contributors",
         "homepage": "https://github.com/khomsovon/bongloy-php/contributors"
       }
-    ],
-    "minimum-stability": "dev"
+    ]
 }

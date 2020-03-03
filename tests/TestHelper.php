@@ -13,7 +13,7 @@ trait TestHelper
     protected $origApiKey;
 
     /** @before */
-    protected function setUp(): void
+    protected function setUp()
     {
         $this->origApiKey = Bongloy::getApiKey();
 
@@ -21,7 +21,7 @@ trait TestHelper
     }
 
     /** @after */
-    protected function tearDown(): void
+    protected function tearDown()
     {
         Bongloy::setApiKey($this->origApiKey);
     }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c0a1a89d115eb72e2ad1874e93d33ce2",
+    "content-hash": "f38e1d01c3dbac7e646699cc2cbe35d8",
     "packages": [
         {
             "name": "stripe/stripe-php",
@@ -2584,7 +2584,10 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.6.0"
+        "php": ">=5.6.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*"
     },
     "platform-dev": []
 }

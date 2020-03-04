@@ -44,7 +44,7 @@ final class ChargeTest extends TestCase
 
         $charges = Charge::all();
 
-        $this->assertEquals($charges->data[0]->id, $charge->id);
+        $this->assertArrayHasKey($charge->id, array_column($charges->data, 'amount', 'id'));
     }
 
     public function testCanCapture()

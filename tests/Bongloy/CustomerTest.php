@@ -1,5 +1,4 @@
 <?php
-
 namespace Bongloy;
 
 use \PHPUnit\Framework\TestCase;
@@ -12,14 +11,14 @@ final class CustomerTest extends TestCase
 
     public function testCreatable()
     {
-      $customer = Customer::create([
-        'email' => "user@example.com",
-        'description' => 'Bongloy customer',
-        'source' => $this->token()->id
-      ]);
+        $customer = Customer::create([
+            'email' => "user@example.com",
+            'description' => 'Bongloy customer',
+            'source' => $this->token()->id
+        ]);
 
-      $this->assertEquals($customer->email, "user@example.com");
-      $this->assertEquals($customer->description, "Bongloy customer");
+        $this->assertEquals($customer->email, "user@example.com");
+        $this->assertEquals($customer->description, "Bongloy customer");
     }
 
     public function testIsRetrievable()
@@ -42,20 +41,20 @@ final class CustomerTest extends TestCase
             'source' => $this->token()->id
         ]);
 
-        $customers = Customer::all();
+        $customers = Customer::all(['limit' => 30]);
 
-        $this->assertEquals($customers->data[0]->id, $customer->id);
+        $this->assertArrayHasKey($customer->id, array_column($customers->data, 'email', 'id'));
     }
 
     private function token()
     {
         $token = Token::create([
-          'card' => [
-            'number' => '6200000000000005',
-            'exp_month' => 2,
-            'exp_year' => 2021,
-            'cvc' => '123',
-          ],
+            'card' => [
+              'number' => '6200000000000005',
+              'exp_month' => 2,
+              'exp_year' => 2021,
+              'cvc' => '123',
+            ],
         ]);
 
         return $token;

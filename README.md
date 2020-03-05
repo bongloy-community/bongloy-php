@@ -34,11 +34,11 @@ require_once('vendor/autoload.php');
 Simple usage looks like:
 
 ```php
-\Bongloy\Bongloy::setApiKey('bongloy_secret_key');
+\Bongloy\Bongloy::setApiKey('sk_test_*****');
 $charge = \Stripe\Charge::create([
     'amount' => 1000,
     'currency' => 'USD',
-    'source' => 'unionpay_source',
+    'source' => '6b1ca112-add7-4bc6-b520-829e004c0580',
 ]);
 echo $charge;
 ```

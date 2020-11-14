@@ -35,7 +35,7 @@ Simple usage looks like:
 
 ```php
 \Bongloy\Bongloy::setApiKey('sk_test_*****');
-$charge = \Stripe\Charge::create([
+$charge = \Bongloy\Charge::create([
     'amount' => 1000,
     'currency' => 'USD',
     'source' => '6b1ca112-add7-4bc6-b520-829e004c0580',

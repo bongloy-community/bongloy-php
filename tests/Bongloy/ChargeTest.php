@@ -3,8 +3,6 @@
 namespace Bongloy;
 
 use \PHPUnit\Framework\TestCase;
-use Stripe\Charge;
-use Stripe\Token;
 
 final class ChargeTest extends TestCase
 {

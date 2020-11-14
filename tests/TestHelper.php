@@ -2,8 +2,6 @@
 
 namespace Bongloy;
 
-use Bongloy\Bongloy;
-
 /**
  * Helper trait for Stripe test cases.
  */

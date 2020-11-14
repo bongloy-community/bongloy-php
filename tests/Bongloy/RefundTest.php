@@ -3,9 +3,6 @@
 namespace Bongloy;
 
 use \PHPUnit\Framework\TestCase;
-use Stripe\Charge;
-use Stripe\Refund;
-use Stripe\Token;
 
 final class RefundTest extends TestCase
 {

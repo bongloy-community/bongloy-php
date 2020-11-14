@@ -3,7 +3,6 @@
 namespace Bongloy;
 
 use \PHPUnit\Framework\TestCase;
-use Stripe\PaymentIntent;
 
 final class PaymentIntentTest extends TestCase
 {

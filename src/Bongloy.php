@@ -19,3 +19,9 @@ class Bongloy extends Stripe
         parent::setApiKey($apiKey);
     }
 }
+
+class Token extends \Stripe\Token {}
+class Charge extends \Stripe\Charge {}
+class Customer extends \Stripe\Customer {}
+class Refund extends \Stripe\Refund {}
+class PaymentIntent extends \Stripe\PaymentIntent {}

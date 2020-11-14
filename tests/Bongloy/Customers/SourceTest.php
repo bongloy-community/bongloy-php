@@ -2,8 +2,6 @@
 namespace Bongloy;
 
 use \PHPUnit\Framework\TestCase;
-use Stripe\Customer;
-use Stripe\Token;
 
 final class SourceTest extends TestCase
 {
